@@ -1,0 +1,2 @@
+/ip firewall filter add action=drop chain=input in-interface-list=WAN-PROTECT dst-port=33434-33534 protocol=tcp comment="Block Traceroute - by OM WiFi"
+/ip firewall filter add action=drop chain=input in-interface-list=WAN-PROTECT dst-port=33434-33534 protocol=udp
