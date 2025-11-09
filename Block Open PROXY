@@ -1,3 +1,4 @@
+## Prevent router from becoming an open proxy relay
 /ip proxy set enabled=no
 /ip firewall filter add action=drop chain=input dst-port=3128,8080 in-interface-list=WAN-PROTECT protocol=tcp comment="Block Open PROXY - by OM WiFi"
 /ip firewall filter add action=drop chain=input dst-port=3128,8080 in-interface-list=WAN-PROTECT protocol=udp
