@@ -1,0 +1,2 @@
+/ip firewall filter add chain=input dst-port=53 in-interface-list=WAN-PROTECT protocol=tcp action=drop comment="Block Open Recursive DNS - by OM WiFi"
+/ip firewall filter add chain=input dst-port=53 in-interface-list=WAN-PROTECT protocol=udp action=drop
