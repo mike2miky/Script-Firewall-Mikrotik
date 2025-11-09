@@ -1,3 +1,4 @@
+## Hide router from discovery protocol
 /ip firewall filter add action=drop chain=input in-interface-list=WAN-PROTECT dst-port=5678 protocol=tcp comment="Block Neighbor Discovery - by OM WiFi"
 /ip firewall filter add action=drop chain=input in-interface-list=WAN-PROTECT dst-port=5678 protocol=udp
 /ip neighbor discovery-settings set discover-interface-list=!WAN-PROTECT

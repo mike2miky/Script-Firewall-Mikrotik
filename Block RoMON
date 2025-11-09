@@ -1,1 +1,2 @@
+## Disable RoMON from public interface
 /tool romon port add disabled=no forbid=yes interface="ether1-ISP-MYREP" comment="Block RoMON - by OM WiFi"
